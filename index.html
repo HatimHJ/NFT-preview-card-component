@@ -21,32 +21,63 @@
 	</head>
 	<body>
 		<main>
+			<section class="lightbox" id="light-box">
+				<h2 class="sr-only">
+					lightbox shown equilibrium image very boring stuff
+				</h2>
+				<div class="content">
+					<img src="./images/image-equilibrium.jpg" alt="" />
+					<a href="#" class="close"></a>
+				</div>
+			</section>
 			<h1 class="sr-only">NFT preview card component</h1>
 			<div class="card">
 				<div class="card__image">
-					<img src="./images/image-equilibrium.jpg" alt="" />
-					<img src="./images/icon-view.svg" alt="" class="icon view" />
+					<a
+						href="#light-box"
+						id="link"
+						aria-label="go to equilibrium lightbox"
+					>
+						<img src="./images/image-equilibrium.jpg" alt="" />
+						<span class="sr-only">image of equilibrium whatever that is</span>
+					</a>
 				</div>
 				<div class="card__content">
-					<h2>Equilibrium #3429</h2>
+					<a href="/">
+						<h2>Equilibrium #3429</h2>
+					</a>
 					<p class="desc">
 						Our Equilibrium collection promotes balance and calm
 					</p>
-					<div class="values">
-						<span class="left">
-							<img src="./images/icon-ethereum.svg" class="icon" alt="" />
-							<span class="eth">0.041 ETH</span>
-						</span>
-						<span class="right">
-							<img src="./images/icon-clock.svg" class="icon" alt="" />
-							<span class="time">3 days left</span>
-						</span>
-					</div>
+					<ul class="values">
+						<li class="left">
+							<img
+								src="./images/icon-ethereum.svg"
+								aria-hidden="true"
+								class="icon"
+								alt=""
+							/>
+							<p class="eth">0.041 ETH</p>
+						</li>
+						<li class="right">
+							<img
+								src="./images/icon-clock.svg"
+								class="icon"
+								alt=""
+								aria-hidden="true"
+							/>
+							<p class="time">3 days left</p>
+						</li>
+					</ul>
 					<div class="person">
 						<div class="avatar-container">
-							<img src="./images/image-avatar.png" alt="" class="icon avatar" />
+							<img
+								src="./images/image-avatar.png"
+								alt="Jules Wyvern"
+								class="icon avatar"
+							/>
 						</div>
-						<p>Creation of <span class="name">Jules Wyvern</span></p>
+						<p>Creation of <a href="/" class="name">Jules Wyvern</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
